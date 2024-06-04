@@ -32,6 +32,20 @@ def initiallize_collaborators_json(file_name: str) -> None:
     else:
         print(f'{full_path} already exists.')
 
+def initiallize_collaborators_dataframe(file_name: str) -> None:
+    """
+    Initializes a JSON file for storing collaborators' information.
+
+    Args:
+        file_name (str): The name of the JSON file.
+    """
+    full_path = os.path.join(SECURE_FOLDER, file_name)
+    if not os.path.exists(full_path):
+        df = pd.DataFrame(columns=['id', 'send2folder', 'name', 'emasil', 'allowed_folders'])
+        df.to_csv(full_path)
+    else:
+        print(f'{full_path} already exists.')
+
 def init_logs_history_parquet(file_name: str) -> None:
     """
     Initializes a Parquet file for storing logs history.
