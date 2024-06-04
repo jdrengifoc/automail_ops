@@ -1,0 +1,11 @@
+[project]
+name = "automail_ops"
+version = "0.1.0"
+description = "Automate operational tasks."
+readme = "README.md"
+authors = [
+    {name="Juan David Rengifo Castro", email="jdrengifoc@eafit.edu.co"}
+    ]
+requires-python = ">=3.9"
+keywords = ["automation"]
+license = {file = "LICENSE.txt"}
