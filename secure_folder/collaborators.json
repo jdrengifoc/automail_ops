@@ -1,0 +1,13 @@
+[
+    {
+        "id": "807ee9da-5e01-442d-a596-82dcc8a05253",
+        "name": "Juan",
+        "email": "jdrengifoc@eafit.edu.co",
+        "allowed_folder": [
+            "./src"
+        ],
+        "allowed_files": [
+            "./src/init.py"
+        ]
+    }
+]
